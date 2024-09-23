@@ -1,13 +1,13 @@
 # -California-Housing-Data-Analysis-
-This project focuses on analyzing housing data from the California Housing dataset. The primary aim is to extract insights related to housing prices, locations, and demographics using Python and data manipulation libraries. The information about real estate trends in California, using Jupyter Notebook or Google Colab to execute the analysis
+
 🏡 California Housing Data Analysis 🏡
 📑 Project Overview
 This project focuses on analyzing housing data from the California Housing dataset. The primary aim is to extract insights related to housing prices, locations, and demographics using Python and data manipulation libraries. The analysis provides valuable information about real estate trends in California, using Jupyter Notebook or Google Colab to execute the analysis.
 
-🔧 Prerequisites
+# 🔧 Prerequisites
 Before starting, ensure that you have the following software and libraries installed:
 
-Python 3.x 🐍
+# Python 3.x 🐍
 Jupyter Notebook or Google Colab 📓
 Pandas for data manipulation 🐼
 Matplotlib and Seaborn for data visualization 📊
@@ -15,22 +15,17 @@ NumPy for numerical operations 🔢
 Scikit-learn for machine learning tasks 🧠
 You can install the necessary libraries with the following command:
 
-bash
-Copy code
-pip install pandas matplotlib seaborn numpy scikit-learn
+# pip install pandas matplotlib seaborn numpy scikit-learn
 🚀 Steps for Task Execution
 Step 1: Setting Up the Environment ⚙️
 Jupyter Notebook or Google Colab can be used for this project. If you are using Google Colab, upload the california_housing_test.csv file.
 For Google Colab:
 
-python
-Copy code
-from google.colab import files
+# from google.colab import files
 uploaded = files.upload()
 Step 2: Loading the Dataset 📂
 Import necessary libraries and load the California Housing dataset:
-python
-Copy code
+
 import pandas as pd
 
 # Load the dataset
