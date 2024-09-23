@@ -9,15 +9,22 @@ Before starting, ensure that you have the following software and libraries insta
 
 # Python 3.x 🐍
 Jupyter Notebook or Google Colab 📓
+
 Pandas for data manipulation 🐼
+
 Matplotlib and Seaborn for data visualization 📊
+
 NumPy for numerical operations 🔢
+
 Scikit-learn for machine learning tasks 🧠
+
 You can install the necessary libraries with the following command:
 
 # pip install pandas matplotlib seaborn numpy scikit-learn
+
 🚀 Steps for Task Execution
 Step 1: Setting Up the Environment ⚙️
+
 Jupyter Notebook or Google Colab can be used for this project. If you are using Google Colab, upload the california_housing_test.csv file.
 For Google Colab:
 
