@@ -54,8 +54,6 @@ data.describe()
 data.isnull().sum()
 Step 4: Data Visualization 📊
 Visualize the distribution of housing prices and other key variables. For example, plot housing price distribution:
-python
-Copy code
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -66,16 +64,14 @@ plt.title('Distribution of Median House Values')
 plt.xlabel('Median House Value')
 plt.ylabel('Frequency')
 plt.show()
-Step 5: Feature Engineering 🛠️
+
+# Step 5: Feature Engineering 🛠️
 Create new features from existing ones, such as population density or bedrooms per household:
-python
-Copy code
+
 # Example: Adding a new feature for population density
 data['population_density'] = data['population'] / data['households']
 Step 6: Building a Machine Learning Model 🤖
 Use Scikit-learn to predict house prices based on the features in the dataset. Start by splitting the data into training and testing sets:
-python
-Copy code
 from sklearn.model_selection import train_test_split
 
 # Split data into features (X) and target variable (y)
@@ -85,8 +81,6 @@ y = data['median_house_value']
 # Train-test split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 Train a regression model:
-python
-Copy code
 from sklearn.ensemble import RandomForestRegressor
 
 # Initialize and fit the model
@@ -105,21 +99,24 @@ rmse = mean_squared_error(y_test, y_pred, squared=False)
 print(f'Root Mean Squared Error: {rmse}')
 Step 7: Saving the Results 💾
 Save the processed dataset or model predictions for future use:
-python
-Copy code
+
 # Save processed data
 data.to_csv('processed_california_housing.csv', index=False)
 
 # Save model predictions
 predictions = pd.DataFrame({'Predicted': y_pred})
 predictions.to_csv('housing_predictions.csv', index=False)
-Step 8: Conclusion ✅
+
+# 8: Conclusion ✅
+
 Summarize the findings and the results of the model evaluation. For example:
 Median house values show a strong correlation with the median income in each block.
 The Random Forest Regressor yielded a RMSE of X, which indicates how well the model performed.
-🎯 Future Work
-Improving Model Performance: Try using other models like XGBoost or Gradient Boosting Regressor.
+# 🎯 Future Work
+
+# Improving Model Performance: Try using other models like XGBoost or Gradient Boosting Regressor.
 Geographical Analysis: Map out housing prices geographically using latitude and longitude data.
 Feature Selection: Perform feature importance analysis to identify the most influential factors.
-🏆 Conclusion
+# 🏆 Conclusion
+
 This project provided a comprehensive overview of how to handle and analyze housing data, with a focus on the California Housing dataset. The analysis included exploratory data analysis, visualization, and the use of a machine learning model for predicting housing prices.
